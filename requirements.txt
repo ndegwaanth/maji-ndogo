@@ -1,3 +1,4 @@
-pymsql
-Ipython-sql
+pymysql
+ipython-sql
+cryptography
 prettytable==3.9.0
