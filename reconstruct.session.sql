@@ -31,7 +31,7 @@ SET GLOBAL local_infile = 1;
 
 -- C:\Users/ndegw/Music/alx/alX-datascience/week6/SQL/access_to_basic_services.csv
 
-LOAD DATA LOCAL INFILE 'C:/Users/Anthony/Pictures/alx-datascience/week6/SQL/access_to_basic_services.csv'
+LOAD DATA LOCAL INFILE 'C:/Users/ndegw/Music/alx/alX-datascience/week6/SQL/access_to_basic_services.csv'
 INTO TABLE Access_to_Basic_Services
 FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'

@@ -42,6 +42,9 @@ source ~/.bashrc
 
 mysql -u root
 
+# solution for csv external File
+mysql --local-infile=1 -u anthony -p
+Then try your LOAD DATA LOCAL INFILE again. 
 
 # Run MYSQL in the background
 cd ~/mysql/mysql-8.0.40-winx64/bin
