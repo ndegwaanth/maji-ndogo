@@ -1,0 +1,45 @@
+Table Geographic_Location {
+  Country_name varchar [pk]
+  Sub_region varchar
+  Region varchar
+  Land_area numeric
+}
+
+Table Basic_Services {
+  Country_name varchar
+  Time_period int
+  Pct_managed_drinking_water_services float
+  Pct_managed_sanitation_services float
+
+  Indexes {
+    (Country_name, Time_period) [pk]
+  }
+}
+
+Table Economic_Indicators {
+  Country_name varchar
+  Time_period int
+  Est_gdp_in_billions float
+  Est_population_in_millions float
+  Pct_unemployment float
+
+  Indexes {
+    (Country_name, Time_period) [pk]
+  }
+}
+
+Table Education_Indicators {
+  Country_name varchar
+  Time_period int
+  Literacy_rate float
+  School_enrollment float
+
+  Indexes {
+    (Country_name, Time_period) [pk]
+  }
+}
+
+Ref: Education_Indicators.Country_name > Geographic_Location.Country_name
+
+Ref: Economic_Indicators.Country_name > Geographic_Location.Country_name
+Ref: Basic_Services.Country_name > Geographic_Location.Country_name
